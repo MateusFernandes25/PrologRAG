@@ -110,7 +110,7 @@ class CreateProlog:
         output_file_name = self.file_name.replace('.pdf', '.pl')
         with open(output_file_name, "w") as file:
             file.write(organized_output)
-        return organized_output
+        return True
 
 
 class PreProcessing:

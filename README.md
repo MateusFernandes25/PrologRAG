@@ -13,6 +13,8 @@ PrologRAG is an innovative framework that leverages the concept of Retrieval-Aug
 1. Clone this repository:  
    ```bash
    git clone https://github.com/your_user/prolog-rag.git
+   cd PrologRAG
+   pip install .[all]
 
 
 ## Step-by-Step
@@ -42,17 +44,7 @@ PrologRAG is an innovative framework that leverages the concept of Retrieval-Aug
    prolog_rag = PrologRAG(slm=llm, file_path="Scientist.pl", llm=llm, question=question)
    result = prolog_rag.answer_query()
 
-## Contributing
-Contributions are welcome! To suggest improvements or report issues, submit an issue or pull request.
 
-## License
-This project is licensed under the MIT License.
 
 ## Author
-Developed by Mateus Fernandes e Claudionor Coelho.
-
-
-
-
-    
-
+Developed by Mateus Fernandes dos Santos e Claudionor Coelho Jr.
