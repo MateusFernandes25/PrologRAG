@@ -41,7 +41,7 @@ PrologRAG is an innovative framework that leverages the concept of Retrieval-Aug
 
 3. Use the PrologRAGPDF class to generate the Prolog code:
    ```bash
-   file_name = ""examples/Scientist.pl""
+   file_name = "examples/Scientist.pl"
    prolog = CreateProlog(file_name, llm=llm, chunks=chunks)
    prolog.organize_prolog_code()
    
