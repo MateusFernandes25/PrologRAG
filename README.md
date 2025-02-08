@@ -12,6 +12,7 @@ PrologRAG is an innovative framework that leverages the concept of Retrieval-Aug
 ### Installation  
 1. Clone this repository:  
    ```bash
+   sudo apt-get install swi-prolog #Install SWI-PROLOG
    git clone https://github.com/your_user/prolog-rag.git
    cd PrologRAG
    python3 -m venv venv
