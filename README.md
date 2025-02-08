@@ -23,6 +23,10 @@ PrologRAG is an innovative framework that leverages the concept of Retrieval-Aug
 
 1. Use PyPDFLoader to load the document content and split it into chunks:
    ```bash
+   from langchain_openai import OpenAI
+   from langchain.document_loaders import TextLoader, CSVLoader, PyPDFLoader
+   from langchain.text_splitter import RecursiveCharacterTextSplitter
+   
    FILE = "../examples/Scientist.pdf"
    loader = PyPDFLoader(FILE)
    documents = loader.load()
