@@ -14,6 +14,8 @@ PrologRAG is an innovative framework that leverages the concept of Retrieval-Aug
    ```bash
    git clone https://github.com/your_user/prolog-rag.git
    cd PrologRAG
+   python3 -m venv venv
+   source venv/bin/activate 
    pip install .[all]
 
 
