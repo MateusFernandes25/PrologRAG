@@ -23,8 +23,7 @@ PrologRAG is an innovative framework that leverages the concept of Retrieval-Aug
 ## Step-by-Step
 
 1. Use PyPDFLoader to load the document content and split it into chunks:
-   ```bash
-   from langchain_openai import OpenAI
+   ```bash   
    from langchain.document_loaders import TextLoader, CSVLoader, PyPDFLoader
    from langchain.text_splitter import RecursiveCharacterTextSplitter
    
@@ -34,9 +33,14 @@ PrologRAG is an innovative framework that leverages the concept of Retrieval-Aug
    text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=200)
    chunks = text_splitter.split_documents(documents)
 
-2. Imports
+2. Imports and LLM
    ```bash
    from PrologRAG import CreateProlog, PrologRAG
+   from langchain_openai import OpenAI
+
+   #Activate LLM
+   llm = OpenAI(openai_api_key=api_key,temperature=0, max_tokens=1000)
+   
 
 
 3. Use the PrologRAGPDF class to generate the Prolog code:
