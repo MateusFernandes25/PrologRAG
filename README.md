@@ -41,14 +41,16 @@ PrologRAG is an innovative framework that leverages the concept of Retrieval-Aug
 
 3. Use the PrologRAGPDF class to generate the Prolog code:
    ```bash
+   file_name = ""examples/Scientist.pl""
    prolog = CreateProlog(file_name, llm=llm, chunks=chunks)
    prolog.organize_prolog_code()
    
 4. Perform queries using the PrologRAG class:
    ```bash
    #slm (Small Language Model) - Transform question in Prolog Query
-   #llm (Large Language Model) - Use query result as context to answer question 
-   prolog_rag = PrologRAG(slm=llm, file_path="Scientist.pl", llm=llm, question=question)
+   #llm (Large Language Model) - Use query result as context to answer question
+   file_path = "examples/Scientist.pl"
+   prolog_rag = PrologRAG(slm=llm, file_path=file_path, llm=llm, question=question)
    result = prolog_rag.answer_query()
 
 
