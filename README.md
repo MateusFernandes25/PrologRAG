@@ -54,6 +54,7 @@ PrologRAG is an innovative framework that leverages the concept of Retrieval-Aug
    #slm (Small Language Model) - Transform question in Prolog Query
    #llm (Large Language Model) - Use query result as context to answer question
    file_path = "examples/Scientist.pl"
+   question = "Who was Marie Curie's husband?"
    prolog_rag = PrologRAG(slm=llm, file_path=file_path, llm=llm, question=question)
    result = prolog_rag.answer_query()
 
