@@ -28,7 +28,7 @@ PrologRAG is an innovative framework that leverages the concept of Retrieval-Aug
    from langchain.document_loaders import TextLoader, CSVLoader, PyPDFLoader
    from langchain.text_splitter import RecursiveCharacterTextSplitter
    
-   FILE = "../examples/Scientist.pdf"
+   FILE = "examples/Scientist.pdf"
    loader = PyPDFLoader(FILE)
    documents = loader.load()
    text_splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=200)
